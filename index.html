@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Admin Login Section -->
+    <div id="admin-section" class="admin-box">
+        <h3>Admin Login</h3>
+        <input type="password" id="admin-password" placeholder="Enter Password">
+        <button id="admin-login-btn">Login</button>
+        <p id="login-error" class="error-msg"></p>
+    </div>
+
+    <!-- Admin Controls (hidden by default) -->
+    <div id="admin-controls" class="admin-controls">
+        <div class="add-player-section">
+            <h2>Add New Player</h2>
+            <input type="text" id="player-name-input" placeholder="Enter Player Name">
+            <button id="add-player-btn">Add Player</button>
+        </div>
+
+        <div class="update-points-section">
+            <h2>Update Player Points</h2>
+            <select id="player-select">
+                <option value="" disabled selected>Select Player</option>
+            </select>
+            <input type="number" id="points-input" placeholder="Enter Points">
+            <button id="update-points-btn">Update Points</button>
+        </div>
+    </div>
+
+    <!-- Player Progress Section -->
+    <div id="player-container"></div>
+
+    <!-- Overlay for visual effects -->
+    <div class="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
